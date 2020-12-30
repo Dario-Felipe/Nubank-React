@@ -1,0 +1,38 @@
+.button-content {
+  width: 100%;
+
+  .button {
+    align-items: center;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    outline: none;
+    width: 100%;
+    transition: all 0.3s;
+
+    &--pix {
+      background: #8a05be;
+      border: none;
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 15px;
+      padding: 10px 20px;
+
+      &:hover {
+        background: #9807d1;
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .button-content {
+    .button {
+      &--pix {
+        font-size: 20px;
+        padding: 15px 30px;
+      }
+    }
+  }
+}

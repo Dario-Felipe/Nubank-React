@@ -1,0 +1,55 @@
+.link-content {
+  width: 100%;
+  margin-top: 15px;
+
+  &_button {
+    align-items: flex-start;
+    color: white;
+    display: flex;
+    flex-direction: column-reverse;
+    position: relative;
+    width: fit-content;
+
+    span {
+      font-weight: 600;
+      font-size: 18px;
+
+      svg {
+        margin-left: 6px;
+      }
+    }
+
+    &::after {
+      background: white;
+      bottom: 8%;
+      content: '';
+      height: 1px;
+      position: absolute;
+      transform-origin: bottom left;
+      transform: scaleX(0);
+      transition: all 0.25s;
+      visibility: hidden;
+      width: 100%;
+    }
+
+    &:hover {
+      color: white;
+      text-decoration: none;
+
+      &::after {
+        transform: scaleX(1);
+        visibility: visible;
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .link-content {
+    &_button {
+      span {
+        font-size: 20px;
+      }
+    }
+  }
+}
