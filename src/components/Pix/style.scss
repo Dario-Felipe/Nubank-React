@@ -37,18 +37,42 @@
       justify-content: center;
       padding: 30px 25px;
 
-      &_input {
-        background-color: transparent;
-        border: none;
-        border-bottom: 2px solid #ccc;
+      &_label {
         margin: 50px 0;
-        outline: none;
+        position: relative;
         width: 100%;
-        padding: 5px;
-        transition: all 0.2s;
 
-        &:hover {
-          border-bottom: 2px solid rgb(95, 93, 93);
+        &_input {
+          background-color: transparent;
+          border: none;
+          border-bottom: 2px solid #ccc;
+          outline: none;
+          padding: 5px;
+          transition: all 0.2s;
+          width: 100%;
+          font-size: 20px;
+
+          &:hover, &:focus {
+            border-bottom: 2px solid rgb(95, 93, 93);
+          }
+
+          &:focus + .pix_board_label_placeholder {
+            left: -10px;
+            top: -16px;
+            transform: scaleY(0.7) scaleX(0.7);
+          }
+        }
+
+        &_placeholder {
+          left: 2%;
+          position: absolute;
+          top: 20%;
+          transition: all 0.3s;
+
+          span {
+            color: rgb(145, 145, 145);
+            font-weight: bold
+          }
         }
       }
     }
@@ -85,6 +109,13 @@
         h5 {
           font-weight: bold;
           font-size: 25px;
+        }
+
+        &_label {
+          &_placeholder {
+            left: 0;
+            top: 0;
+          }
         }
       }
     }

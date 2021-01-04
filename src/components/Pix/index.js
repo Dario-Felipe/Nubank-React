@@ -20,7 +20,12 @@ const Pix = () => {
               </div>
               <div className="pix_board">
                 <h5>Peça sua conta e cartão de crédito do Nubank</h5>
-                <input className="pix_board_input" type="text" placeholder="Digite seu CPF"/>
+                <div className="pix_board_label">
+                  <input className="pix_board_label_input" type="text"/>
+                  <div className="pix_board_label_placeholder">
+                    <span>Digite seu CPF</span>
+                  </div>
+                </div>
                 <Button text="Continuar" />
               </div>
             </div>
