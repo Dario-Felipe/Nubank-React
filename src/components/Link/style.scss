@@ -11,7 +11,7 @@
     width: fit-content;
 
     span {
-      font-weight: 600;
+      font-weight: bold;
       font-size: 18px;
 
       svg {
@@ -23,7 +23,7 @@
       background: white;
       bottom: 8%;
       content: '';
-      height: 1px;
+      height: 2px;
       position: absolute;
       transform-origin: bottom left;
       transform: scaleX(0);
@@ -37,8 +37,20 @@
       text-decoration: none;
 
       &::after {
-        transform: scaleX(1);
+        transform: scaleX(1.01);
         visibility: visible;
+      }
+    }
+
+    &--benefit {
+      color: #A33BCC;
+
+      &:hover {
+        color: #A33BCC;
+
+        &::after {
+          background: #A33BCC;
+        }
       }
     }
   }
@@ -49,6 +61,11 @@
     &_button {
       span {
         font-size: 20px;
+      }
+
+      svg {
+        width: 18px;
+        height: 18px;
       }
     }
   }
