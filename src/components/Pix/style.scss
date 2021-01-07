@@ -56,7 +56,7 @@
             border-bottom: 2px solid rgb(95, 93, 93);
           }
 
-          &:focus + .pix_board_label_placeholder {
+          &:focus ~ .pix_board_label_placeholder, &:valid ~ .pix_board_label_placeholder {
             left: -10px;
             top: -16px;
             transform: scaleY(0.7) scaleX(0.7);
@@ -68,11 +68,9 @@
           position: absolute;
           top: 20%;
           transition: all 0.3s;
-
-          span {
-            color: rgb(145, 145, 145);
-            font-weight: bold
-          }
+          color: rgb(145, 145, 145);
+          font-weight: bold;
+          pointer-events: none;
         }
       }
     }
