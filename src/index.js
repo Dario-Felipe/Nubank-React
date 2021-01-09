@@ -3,12 +3,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Pix from './components/Pix/index';
 import Benefit from './components/Benefit/index';
+import Account from './components/Account/index';
 
 ReactDOM.render(
   <React.StrictMode>
     <>
       <Pix />
       <Benefit />
+      <Account />
     </>
   </React.StrictMode>,
   document.getElementById('root')
