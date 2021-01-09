@@ -42,7 +42,7 @@
       }
     }
 
-    &--benefit {
+    &--benefit, &--account {
       color: #A33BCC;
 
       &:hover {
@@ -51,6 +51,12 @@
         &::after {
           background: #A33BCC;
         }
+      }
+    }
+
+    &--account {
+      svg {
+        transform: rotate(-45deg);
       }
     }
   }
