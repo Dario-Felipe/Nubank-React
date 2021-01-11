@@ -3,16 +3,14 @@ import media from '../../tokens/media';
 
 export const SectionAccount = styled.div`
   background: #F5F5F5;
-  padding: 20px 0;
-  padding-bottom: 60px;
+  padding: 20px 0 60px;
 
   ${ media.sm } {
-    padding: 220px 0;
-    padding-bottom: 200px;
+    padding: 160px 40px;
   }
 
   ${ media.lg } {
-    padding: 90px 0;
+    padding: 90px 100px 90px;
   }
 `;
 
@@ -21,11 +19,6 @@ export const AccountContent = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 40px;
-  }
-
-  ${ media.lg } {
-    padding: 0 100px;
   }
 `;
 
@@ -54,7 +47,7 @@ export const AccountContent_Text = styled.div`
 
   ${ media.sm } {
     .account-link, h3 {
-      font-size: 42px
+      font-size: 46px
     }
 
     .account-link {
