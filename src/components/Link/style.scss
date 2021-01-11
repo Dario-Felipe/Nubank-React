@@ -54,9 +54,10 @@
       }
     }
 
-    &--account {
+    &--account, &--white {
       svg {
         transform: rotate(-45deg);
+        margin-bottom: 8px;
       }
     }
   }
