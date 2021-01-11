@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom';
 import Pix from './components/Pix/index';
 import Benefit from './components/Benefit/index';
 import Account from './components/Account/index';
+import Credit from './components/Credit/index';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -11,6 +12,7 @@ ReactDOM.render(
       <Pix />
       <Benefit />
       <Account />
+      <Credit />
     </>
   </React.StrictMode>,
   document.getElementById('root')
