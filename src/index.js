@@ -6,6 +6,7 @@ import Benefit from './components/Benefit/index';
 import Account from './components/Account/index';
 import Credit from './components/Credit/index';
 import Reward from './components/Reward/index';
+import Relationship from './components/Relationship/index';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -15,6 +16,7 @@ ReactDOM.render(
       <Account />
       <Credit />
       <Reward />
+      <Relationship />
     </>
   </React.StrictMode>,
   document.getElementById('root')
