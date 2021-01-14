@@ -7,6 +7,7 @@ import Account from './components/Account/index';
 import Credit from './components/Credit/index';
 import Reward from './components/Reward/index';
 import Relationship from './components/Relationship/index';
+import Community from './components/Community/index';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -17,6 +18,7 @@ ReactDOM.render(
       <Credit />
       <Reward />
       <Relationship />
+      <Community />
     </>
   </React.StrictMode>,
   document.getElementById('root')
