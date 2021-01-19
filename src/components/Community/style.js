@@ -4,26 +4,24 @@ import CommunitySmart from '../../img/Community/CommunitySmart.jpg';
 import CommunityDesktop from '../../img/Community/CommunityDesktop.jpg';
 
 export const SectionCommunity = styled.div`
-  background-image: url( ${ CommunitySmart } );
+  background-image: url(${CommunitySmart});
   background-size: cover;
   background-position: center center;
   padding: 140px 0;
 
-  ${ media.sm } {
-    background-image: url( ${ CommunityDesktop } );
+  ${media.sm} {
+    background-image: url(${CommunityDesktop});
     padding: 60px 40px;
   }
 
-  ${ media.lg } {
+  ${media.lg} {
     padding: 220px 100px;
   }
 `;
 
-export const CommunityContent = styled.div`
+export const CommunityContent = styled.div``;
 
-`;
-
-export const CommunityContent_Text = styled.div`
+export const CommunityContentText = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -38,7 +36,7 @@ export const CommunityContent_Text = styled.div`
     margin-bottom: 20px;
   }
 
-  ${ media.sm } {
+  ${media.sm} {
     h3 {
       font-size: 46px;
       width: 50%;
@@ -49,7 +47,7 @@ export const CommunityContent_Text = styled.div`
     }
   }
 
-  ${ media.lg } {
+  ${media.lg} {
     h3 {
       font-size: 53px;
       width: 35%;

@@ -21,5 +21,5 @@ ReactDOM.render(
       <Community />
     </>
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById('root'),
 );

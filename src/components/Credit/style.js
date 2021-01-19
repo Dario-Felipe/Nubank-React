@@ -4,39 +4,40 @@ import media from '../../tokens/media';
 export const SectionCredit = styled.div`
   padding-top: 20px;
 
-  ${ media.sm } {
+  ${media.sm} {
     padding: 40px 40px 0;
   }
 
-  ${ media.lg } {
+  ${media.lg} {
     padding: 90px 90px 0;
   }
 `;
 
 export const CreditContent = styled.div`
-  ${ media.sm } {
+  ${media.sm} {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100%
+    height: 100%;
   }
 `;
 
-export const CreditContent_Text = styled.div`
+export const CreditContentText = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 40px;
 
-  .credit-link, h3 {
+  .credit-link,
+  h3 {
     font-size: 26px;
   }
 
   .credit-link {
     font-weight: bold;
     font-size: 26px;
-    color: #A33BCC
+    color: #a33bcc;
   }
 
   h3 {
@@ -45,9 +46,10 @@ export const CreditContent_Text = styled.div`
     font-weight: bold;
   }
 
-  ${ media.sm } {
-    .credit-link, h3 {
-      font-size: 42px
+  ${media.sm} {
+    .credit-link,
+    h3 {
+      font-size: 42px;
     }
 
     .credit-link {
@@ -59,9 +61,10 @@ export const CreditContent_Text = styled.div`
     }
   }
 
-  ${ media.lg } {
-    .credit-link, h3 {
-      font-size: 53px
+  ${media.lg} {
+    .credit-link,
+    h3 {
+      font-size: 53px;
     }
 
     h3 {
@@ -70,7 +73,7 @@ export const CreditContent_Text = styled.div`
   }
 `;
 
-export const CreditContent_Img = styled.div`
+export const CreditContentImg = styled.div`
   display: flex;
   align-items: flex-end;
   justify-content: center;
@@ -79,15 +82,15 @@ export const CreditContent_Img = styled.div`
     width: 200px;
   }
 
-  ${ media.sm } {
+  ${media.sm} {
     height: 100%;
     width: 100%;
     align-items: flex-end;
   }
 
-  ${ media.lg } {
+  ${media.lg} {
     img {
-      width: 300px
+      width: 300px;
     }
   }
 `;

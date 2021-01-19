@@ -5,37 +5,38 @@ export const SectionReward = styled.div`
   background: #530082;
   padding-top: 20px;
 
-  ${ media.sm } {
+  ${media.sm} {
     padding: 40px 40px 20px;
   }
 
-  ${ media.lg } {
+  ${media.lg} {
     padding: 90px 90px;
   }
 `;
 
 export const RewardContent = styled.div`
-  ${ media.sm } {
+  ${media.sm} {
     display: flex;
     align-items: center;
     justify-items: center;
   }
 `;
 
-export const RewardContent_Text = styled.div`
+export const RewardContentText = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 40px 40px 60px;
 
-  .reward-link, h3 {
+  .reward-link,
+  h3 {
     font-size: 28px;
   }
 
   .reward-link {
     font-weight: bold;
-    color: #C093FB;
+    color: #c093fb;
   }
 
   h3 {
@@ -44,8 +45,9 @@ export const RewardContent_Text = styled.div`
     color: white;
   }
 
-  ${ media.sm } {
-    .reward-link, h3 {
+  ${media.sm} {
+    .reward-link,
+    h3 {
       font-size: 42px;
     }
 
@@ -54,9 +56,10 @@ export const RewardContent_Text = styled.div`
     }
   }
 
-  ${ media.lg } {
+  ${media.lg} {
     width: 60%;
-    .reward-link, h3 {
+    .reward-link,
+    h3 {
       font-size: 53px;
     }
 
@@ -66,7 +69,7 @@ export const RewardContent_Text = styled.div`
   }
 `;
 
-export const RewardContent_Img = styled.div`
+export const RewardContentImg = styled.div`
   display: flex;
   justify-content: center;
 
@@ -76,7 +79,7 @@ export const RewardContent_Img = styled.div`
     }
   }
 
-  ${ media.sm } {
+  ${media.sm} {
     .reward_img {
       width: 300px;
 
@@ -90,7 +93,7 @@ export const RewardContent_Img = styled.div`
     }
   }
 
-  ${ media.lg } {
+  ${media.lg} {
     .reward_img {
       width: 450px;
     }

@@ -3,25 +3,23 @@ import media from '../../tokens/media';
 import RelationshipBackground from '../../img/Relationship/RelationshipBackground.jpg';
 
 export const SectionRelationship = styled.div`
-  background-image: url( ${ RelationshipBackground } );
+  background-image: url(${RelationshipBackground});
   background-size: cover;
   background-position: center center;
   padding: 150px 0;
 
-  ${ media.sm } {
+  ${media.sm} {
     padding: 80px 40px;
   }
 
-  ${ media.lg } {
+  ${media.lg} {
     padding: 160px 100px;
   }
 `;
 
-export const RelationshipContent = styled.div`
+export const RelationshipContent = styled.div``;
 
-`;
-
-export const RelationshipContent_Text = styled.div`
+export const RelationshipContentText = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -36,14 +34,14 @@ export const RelationshipContent_Text = styled.div`
     margin-bottom: 20px;
   }
 
-  ${ media.sm } {
+  ${media.sm} {
     h3 {
       font-size: 46px;
       width: 50%;
     }
   }
 
-  ${ media.lg } {
+  ${media.lg} {
     h3 {
       font-size: 53px;
       width: 25%;

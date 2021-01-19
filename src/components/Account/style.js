@@ -2,41 +2,42 @@ import styled from 'styled-components';
 import media from '../../tokens/media';
 
 export const SectionAccount = styled.div`
-  background: #F5F5F5;
+  background: #f5f5f5;
   padding: 20px 0 60px;
 
-  ${ media.sm } {
+  ${media.sm} {
     padding: 160px 40px;
   }
 
-  ${ media.lg } {
+  ${media.lg} {
     padding: 90px 100px 90px;
   }
 `;
 
 export const AccountContent = styled.div`
-  ${ media.sm } {
+  ${media.sm} {
     display: flex;
     align-items: center;
     justify-content: center;
   }
 `;
 
-export const AccountContent_Text = styled.div`
+export const AccountContentText = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 40px;
 
-  .account-link, h3 {
+  .account-link,
+  h3 {
     font-size: 26px;
   }
 
   .account-link {
     font-weight: bold;
     font-size: 26px;
-    color: #A33BCC
+    color: #a33bcc;
   }
 
   h3 {
@@ -45,9 +46,10 @@ export const AccountContent_Text = styled.div`
     font-weight: bold;
   }
 
-  ${ media.sm } {
-    .account-link, h3 {
-      font-size: 46px
+  ${media.sm} {
+    .account-link,
+    h3 {
+      font-size: 46px;
     }
 
     .account-link {
@@ -59,13 +61,14 @@ export const AccountContent_Text = styled.div`
     }
   }
 
-  ${ media.lg } {
-    .account-link, h3 {
-      font-size: 53px
+  ${media.lg} {
+    .account-link,
+    h3 {
+      font-size: 53px;
     }
   }
 `;
 
-export const AccountContent_Img = styled.div`
+export const AccountContentImg = styled.div`
   width: 100%;
 `;

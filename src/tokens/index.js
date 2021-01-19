@@ -6,8 +6,4 @@ const tokens = {
   media,
 };
 
-export {
-  tokens as default,
-  breakpoints,
-  media,
-};
+export { tokens as default, breakpoints, media };
