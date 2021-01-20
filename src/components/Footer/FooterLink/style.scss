@@ -1,0 +1,39 @@
+.footer_link {
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  width: 100%;
+
+  span {
+    display: flex;
+    align-items: center;
+
+    svg {
+      margin-left: 8px;
+    }
+  }
+
+  &:hover {
+    color: #d57dff;
+    text-decoration: none;
+  }
+
+  &--without {
+    svg {
+      display: none;
+    }
+  }
+
+  &--rotate {
+    svg {
+      margin-bottom: 5px;
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer_link {
+    font-size: 20px;
+  }
+}

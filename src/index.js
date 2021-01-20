@@ -9,6 +9,7 @@ import Reward from './components/Reward/index';
 import Relationship from './components/Relationship/index';
 import Community from './components/Community/index';
 import Blog from './components/Blog/index';
+import Footer from './components/Footer/index';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -21,6 +22,7 @@ ReactDOM.render(
       <Relationship />
       <Community />
       <Blog />
+      <Footer />
     </>
   </React.StrictMode>,
   document.getElementById('root'),
