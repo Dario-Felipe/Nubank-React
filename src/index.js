@@ -1,6 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Header from './components/Header/index';
 import Pix from './components/Pix/index';
 import Benefit from './components/Benefit/index';
 import Account from './components/Account/index';
@@ -14,6 +15,7 @@ import Footer from './components/Footer/index';
 ReactDOM.render(
   <React.StrictMode>
     <>
+      <Header />
       <Pix />
       <Benefit />
       <Account />
