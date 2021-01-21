@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import media from '../../tokens/media';
 import RelationshipBackground from '../../img/Relationship/RelationshipBackground.jpg';
 
-export const SectionRelationship = styled.div`
+export const SectionRelationship = styled.section`
   background-image: url(${RelationshipBackground});
   background-size: cover;
   background-position: center center;

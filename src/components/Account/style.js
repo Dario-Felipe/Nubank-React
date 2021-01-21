@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import media from '../../tokens/media';
 
-export const SectionAccount = styled.div`
+export const SectionAccount = styled.section`
   background: #f5f5f5;
   padding: 20px 0 60px;
 

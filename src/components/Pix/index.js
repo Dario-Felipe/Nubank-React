@@ -5,7 +5,7 @@ import Button from '../Button/index';
 import PixPhone from '../../img/Pix/phone.png';
 
 const Pix = () => (
-  <div className="section-pix">
+  <section className="section-pix">
     <div className="container-fluid">
       <div className="row">
         <div className="col-12">
@@ -31,7 +31,7 @@ const Pix = () => (
         </div>
       </div>
     </div>
-  </div>
+  </section>
 );
 
 export default Pix;

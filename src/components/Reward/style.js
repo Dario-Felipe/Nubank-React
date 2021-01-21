@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import media from '../../tokens/media';
 
-export const SectionReward = styled.div`
+export const SectionReward = styled.section`
   background: #530082;
   padding-top: 20px;
 

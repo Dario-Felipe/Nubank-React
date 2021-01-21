@@ -5,7 +5,7 @@ import Link from '../Link/index';
 
 const Benefit = () => (
   <>
-    <div className="section-benefit">
+    <section className="section-benefit">
       <div className="container-fluid">
         <div className="row">
           <div className="col-12 col-sm-6 col-md-7 p-0">
@@ -31,7 +31,7 @@ const Benefit = () => (
           </div>
         </div>
       </div>
-    </div>
+    </section>
   </>
 );
 

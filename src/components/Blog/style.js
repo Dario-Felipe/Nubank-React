@@ -3,7 +3,7 @@ import media from '../../tokens/media';
 import BlogSmart from '../../img/Blog/BlogSmart.jpg';
 import BlogDesktop from '../../img/Blog/BlogDesktop.jpg';
 
-export const SectionBlog = styled.div`
+export const SectionBlog = styled.section`
   background-image: url(${BlogSmart});
   background-size: cover;
   background-position: center center;

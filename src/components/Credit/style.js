@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import media from '../../tokens/media';
 
-export const SectionCredit = styled.div`
+export const SectionCredit = styled.section`
   padding-top: 20px;
 
   ${media.sm} {

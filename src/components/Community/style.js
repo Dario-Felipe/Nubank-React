@@ -3,7 +3,7 @@ import media from '../../tokens/media';
 import CommunitySmart from '../../img/Community/CommunitySmart.jpg';
 import CommunityDesktop from '../../img/Community/CommunityDesktop.jpg';
 
-export const SectionCommunity = styled.div`
+export const SectionCommunity = styled.section`
   background-image: url(${CommunitySmart});
   background-size: cover;
   background-position: center center;
