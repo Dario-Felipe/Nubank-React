@@ -1,19 +1,13 @@
 import React, { useState } from 'react';
-import {
-  SectionHeader,
-  HeaderContent,
-  HeaderContentLogo,
-  HamburguerContent,
-  HamburguerContentBox,
-  HamburguerContentBoxItem,
-} from './style';
+import { SectionHeader, HeaderContent, HeaderContentLogo } from './style';
 import Navbar from '../Navbar/index';
+import HamburguerMenu from '../HamburguerMenu/index';
 
 function Header() {
-  const [openMenu, setOpenmenu] = useState(false);
+  const [isChecked, setChecked] = useState(false);
 
   const handleOpen = () => {
-    setOpenmenu(!openMenu);
+    setChecked(!isChecked);
   };
 
   return (
@@ -48,14 +42,12 @@ function Header() {
                     />
                   </svg>
                 </HeaderContentLogo>
-                <Navbar handle={openMenu} />
-                <HamburguerContent onClick={handleOpen}>
-                  <HamburguerContentBox>
-                    <HamburguerContentBoxItem
-                      className={openMenu !== true ? 'hide' : 'show'}
-                    />
-                  </HamburguerContentBox>
-                </HamburguerContent>
+                <Navbar handle={isChecked} />
+                <HamburguerMenu
+                  onClick={handleOpen}
+                  handle={isChecked}
+                  defaultChecked
+                />
               </HeaderContent>
             </div>
           </div>
