@@ -56,14 +56,17 @@ export const NavContentList = styled.ul`
 export const NavContentListItem = styled.li`
   margin-bottom: 15px;
 
-  &:last-child {
-    margin: 0;
-  }
-
   a {
     color: rgba(17, 17, 17, 0.6);
     font-weight: bold;
     font-size: 18px;
+
+    span {
+      background: #f5e2ff;
+      padding: 5px 20px;
+      border-radius: 20px;
+      font-size: 16px;
+    }
 
     &.active {
       color: #8a05be;
@@ -72,6 +75,23 @@ export const NavContentListItem = styled.li`
     &:hover {
       text-decoration: none;
       color: #d57dff;
+
+      span {
+        background: rgb(233, 210, 242);
+        color: rgba(17, 17, 17, 0.6);
+      }
+    }
+  }
+
+  &:last-child {
+    margin: 0;
+
+    a {
+      color: #8a05be;
+
+      svg {
+        margin-left: 6px;
+      }
     }
   }
 
@@ -85,10 +105,18 @@ export const NavContentListItem = styled.li`
   }
 
   ${media.lg} {
-    margin-right: 20px;
+    margin-right: 30px;
 
     a {
       font-size: 20px;
+    }
+
+    &:last-child {
+      display: block;
+
+      a {
+        margin-left: 100px;
+      }
     }
   }
 `;
